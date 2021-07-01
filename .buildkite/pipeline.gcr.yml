@@ -2,5 +2,5 @@ steps:
   - name: "Build and Push"
     command:
       - buildkite-agent artifact download "buildkite-agent-metrics-linux-amd64" ./dist/
-      - docker build -t gcr.io/etsy-gcr-dev/buildkite-agent-metrics:5.2.0 .
-      - docker push gcr.io/etsy-gcr-dev/buildkite-agent-metrics:5.2.0
+      - docker build -t gcr.io/etsy-gcr-dev/buildkite-agent-metrics-test:5.2.0 .
+      - docker push gcr.io/etsy-gcr-dev/buildkite-agent-metrics-test:5.2.0
